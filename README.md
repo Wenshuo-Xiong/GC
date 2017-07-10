@@ -1,2 +1,2 @@
 # GC
-Graph cut based registration methods.
+ Gc based image registration methods.
