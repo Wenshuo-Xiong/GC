@@ -4,8 +4,8 @@
 
 close all;
 
-I = double(imread('.\img_flash\cave-flash.bmp')) / 255;
-p = double(imread('.\img_flash\cave-noflash.bmp')) / 255;
+I = double(imread('cave-flash.bmp')) / 255;
+p = double(imread('cave-noflash.bmp')) / 255;
 
 r = 8;
 eps = 0.02^2;
