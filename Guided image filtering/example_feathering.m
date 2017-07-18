@@ -3,8 +3,8 @@
 
 close all;
 
-I = double(imread('.\img_feathering\toy.bmp')) / 255;
-p = double(rgb2gray(imread('.\img_feathering\toy-mask.bmp'))) / 255;
+I = double(imread('toy.bmp')) / 255;
+p = double(rgb2gray(imread('toy-mask.bmp'))) / 255;
 
 r = 60;
 eps = 10^-6;
