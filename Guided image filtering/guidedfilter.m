@@ -13,7 +13,7 @@ mean_I = boxfilter(I, r) ./ N;     %μk
 mean_p = boxfilter(p, r) ./ N;	   % pk平均
 mean_Ip = boxfilter(I.*p, r) ./ N;    
 cov_Ip = mean_Ip - mean_I .* mean_p; % this is the covariance of (I, p) in each local patch.
-
+										% Cov(X,Y)=E[((X-E(X))(Y-E(Y))]=E(XY)-E(x)E(Y)
 mean_II = boxfilter(I.*I, r) ./ N;	%  E^2
 var_I = mean_II - mean_I .* mean_I;		%δ^2=E^2-(E)^2   δk
 
